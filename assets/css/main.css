@@ -1,0 +1,114 @@
+ol, ul {
+    list-style: none;
+}
+.cookie-popup {
+    z-index: 1;
+}
+.top-section__title{
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 130%;
+    color: #2E2E2E;
+    margin-bottom: 22px;
+}
+.top-section__content ul li{
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    color: #2E2E2E;
+}
+.top-section__content ul li:last-child{
+    margin-bottom: 0;
+}
+.top-section__content ul li:before{
+    content: url(/assets/template/images/Vector.svg);
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.btn_new{
+    background: #78599C;
+    border-radius: 4px;
+    border: 1px solid #78599C;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #FFFFFF;
+    padding: 12px 40px;
+    text-transform: none;
+
+}
+.btn_new:hover{
+    background: #fff;
+    border: 1px solid #78599C;
+    color: #78599C;
+}
+.top-section-btn{
+    margin-top: 40px;
+}
+.top-section__body{
+    padding: 40px 32px;
+    background: rgba(255, 255, 255, 0.24);
+    box-shadow: 0px 0px 20px rgba(205, 205, 205, 0.25);
+    backdrop-filter: blur(20px);
+    border-radius: 16px;
+    max-width: 760px;
+    position: relative;
+    z-index: 1;
+}
+.top-section{
+    padding: 47px 0;
+    background: url(/assets/template/images/Rectangle747.png) 0 0/cover no-repeat;
+    position: relative;
+    overflow: hidden;
+}
+.top-section:before{
+    content: url(/assets/template/images/Rectangle802.png);
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+}
+.decor-elipse1{
+    position: absolute;
+    top: 0;
+    left: 6%;
+}
+.decor-elipse2{
+    position: absolute;
+    bottom: 0;
+}
+@media (max-width: 991px) {
+    .top-section:before{
+        content: none;
+    }
+    .top-section{
+        padding: 32px 0 77px 0;
+        background: url(/assets/template/images/imagebackround1.jpg) 0 100%/cover no-repeat;
+    }
+    .top-section__body{
+        background: none;
+        box-shadow: none;
+        backdrop-filter:none;
+        padding: 0;
+    }
+}
+@media (max-width: 768px){
+    .decor-elipse2,.decor-elipse1{
+        display: none;
+    }
+    .top-section__title{
+        font-size: 20px;
+    }
+    .top-section__content ul li{
+        font-size: 14px;
+        margin-bottom: 8px;
+    }
+    .section-title{
+        font-size: 24px;
+        margin-bottom: 24px;
+    }
+}
